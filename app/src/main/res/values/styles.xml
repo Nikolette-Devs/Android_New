@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="text_show">
+        <item name="android:text">This Works!</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">#00FF00</item>
+        <item name="android:layout_marginTop">25dp</item>
+    </style>
+
+    <style name="button_show">
+        <item name="android:text">This Works!</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintEnd_toStartOf">@+id/btn_reset</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">#FF0000</item>
+        <item name="android:layout_marginTop">25dp</item>
+    </style>
+
+</resources>

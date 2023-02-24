@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">UserReg</string>
+    <string name="UserRegistration_txt">User</string>
+    <string name="UserRegistration_Name">User</string>
+    <string name="UserRegistration_Age">User</string>
+    <string name="UserRegistration_Gender">User</string>
+    <string name="UserRegistration_RadioMale">User</string>
+    <string name="UserRegistration_RadioFemale">User</string>
+    <string name="UserRegistration_FoodChoice">User</string>
+    <string name="UserRegistration_FoodChoiceVeg">User</string>
+    <string name="UserRegistration_FoodChoiceNVeg">User</string>
+    <string name="UserRegistration_FoodChoiceVegan">User</string>
+    <string name="UserRegistration_DOB">User</string>
+    <string name="UserRegistration_MarriageStatus">User</string>
+    <string name="UserRegistration_DataGathered">User</string>
+    <string name="UserRegistration_SubmitBtn">User</string>
+    <string name="UserRegistration_ResetBtn">User</string>
+    <string name="UserRegistraion_ShowData">User</string>
+    <string name="login">Login</string>
+    <string name="login_page">Login Page</string>
+    <string name="password">Login</string>
+    <string name="register">Register</string>
+</resources>

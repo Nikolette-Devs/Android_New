@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_image"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        style="@style/text_show"
+app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/user_name"
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Name: "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/name_edit"
+        android:layout_width="310dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/user_name"
+        app:layout_constraintBottom_toTopOf="@+id/user_age"
+         />
+
+    <TextView
+        android:id="@+id/user_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Age: "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_edit" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="340dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/user_age"
+        app:layout_constraintTop_toBottomOf="@+id/name_edit" />
+
+    <TextView
+        android:id="@+id/user_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Gender: "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <RadioGroup
+        android:id="@+id/radio_btns"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/user_gender"
+        app:layout_constraintTop_toBottomOf="@+id/spinner">
+
+        <RadioButton
+            android:id="@+id/male_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/female_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"></RadioButton>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/user_food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Food:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_gender" />
+
+    <CheckBox
+        android:id="@+id/food_check_box1"
+        android:layout_width="67dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="10dp"
+        android:text="Veg"
+        app:layout_constraintStart_toEndOf="@+id/user_food"
+        app:layout_constraintTop_toBottomOf="@+id/user_gender" />
+
+    <CheckBox
+        android:id="@+id/food_check_box2"
+        android:layout_width="117dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="10dp"
+        android:text="Non - Veg"
+        app:layout_constraintStart_toEndOf="@+id/food_check_box1"
+        app:layout_constraintTop_toBottomOf="@+id/user_gender" />
+
+    <CheckBox
+        android:id="@+id/food_check_box3"
+        android:layout_width="77dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="10dp"
+        android:text="Vegan"
+        app:layout_constraintStart_toEndOf="@+id/food_check_box2"
+        app:layout_constraintTop_toBottomOf="@+id/user_gender" />
+
+    <TextView
+        android:id="@+id/birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:text="Date of Birth:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_food" />
+
+    <DatePicker
+        android:id="@+id/date_pick"
+        android:layout_width="270dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        app:layout_constraintStart_toEndOf="@+id/birthday"
+        app:layout_constraintTop_toBottomOf="@+id/user_food" />
+
+    <TextView
+        android:id="@+id/married"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Married?"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_pick" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/married_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@+id/married"
+        app:layout_constraintTop_toBottomOf="@+id/date_pick">
+
+    </androidx.appcompat.widget.SwitchCompat>
+
+    <TextView
+        android:id="@+id/user_age_entered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Enter users age: "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/married_switch"
+        app:layout_constraintTop_toBottomOf="@+id/date_pick" />
+
+    <EditText
+        android:id="@+id/data_enter"
+        android:layout_width="87dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/user_age_entered"
+        app:layout_constraintTop_toBottomOf="@+id/date_pick" />
+
+    <TextView
+        android:id="@+id/data_show"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="76dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/data_enter" />
+
+    <Button
+        style="@style/button_show" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:background="@drawable/border"
+        android:text="Reset"
+        android:textSize="10sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_data">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn_data"
+        android:layout_width="108dp"
+        android:layout_height="35dp"
+        android:background="@drawable/border"
+        android:text="Show Data"
+        android:textSize="10sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
